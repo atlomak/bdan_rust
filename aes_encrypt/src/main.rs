@@ -14,8 +14,8 @@ struct CipherData {
     key: Vec<u8>,
     nonce: Vec<u8>,
 }
-fn main() {
-}
+
+fn main() {}
 
 fn encrypt(plaintext: &str) -> CipherData {
     let key = Aes128Gcm::generate_key(OsRng);
